@@ -1,33 +1,21 @@
-﻿namespace Task_02_02
+﻿
+namespace Task_02_02
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //ввод данных
-            Console.WriteLine("введите первое число (a)");
-            double a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("введите второе число (b)");
-            double b = Convert.ToDouble(Console.ReadLine());
+            int a = 8;
+            int b = 14;
+            double c = Math.PI / 4;
+            double z = Math.Abs(a - b);
+            double x = Math.Pow(Math.Sin(c), 2) + Math.Tan(c);
+            double v = z * x;
 
-            //вычисление и вывод результата
-            double summAB = a + b;
-            Console.WriteLine("сумма чисел: " + summAB);
+            double K = Math.Pow(b + Math.Pow(a - 1, 1.0 / 3.0), 1.0 / 4.0);
+            double o = K / v;
+            Console.WriteLine(o);
 
-            double multipleAB = a * b;
-            Console.WriteLine("произведение чисел: " + multipleAB);
-            double diffAB = a - b;
-            Console.WriteLine("разность чисел: " + diffAB);
-            double divAB;
-            if (b != 0)
-            {
-                divAB = a / b;
-                Console.WriteLine("деление a на b: " + divAB);
-            }
-            else
-            {
-                Console.WriteLine("деление на ноль");
-            }
         }
     }
 }
